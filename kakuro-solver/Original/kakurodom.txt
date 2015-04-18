@@ -1,0 +1,120 @@
+def dominios(num, div): #esto halla los números que sumados dan un npumero (nun es el número a sumar y div es cuantas casillas hay para que sumadas den el número)
+	dom = []
+	domreal = set()
+	for list in range(div):
+		lista = []*num
+		for value in range(1,num+1):
+			lista.append(value)
+		dom.append(lista)
+	if num >= 10:
+		temp = 9
+	else:
+		temp=num
+
+	if div == 2:
+		for a in range(temp):
+			for b in range(temp):
+				comb = dom[0][a] + dom[1][b]
+				if comb == num:
+					new={dom[0][a], dom[1][b]}
+					if len(new)==2:
+						domreal = domreal | new
+	elif div == 3:
+		for a in range(temp):
+			for b in range(temp):
+				for c in range(temp):
+					comb = dom[0][a] + dom[1][b] + dom[2][c]
+					if comb == num:
+						new = {dom[0][a], dom[1][b], dom[2][c]}
+						if len(new)==3:
+							domreal = domreal | new
+
+	elif div == 4:
+		for a in range(temp):
+			for b in range(temp):
+				for c in range(temp):
+					for d in range(temp):
+						comb = dom[0][a] + dom[1][b] + dom[2][c] + dom[3][d]
+						if comb == num:
+							new = {dom[0][a], dom[1][b], dom[2][c], dom[3][d]}
+							if len(new)==4:
+								domreal = domreal | new
+							if len(domreal)==9:
+											return domreal
+	elif div == 5:
+		for a in range(temp):
+			for b in range(temp):
+				for c in range(temp):
+					for d in range(temp):
+						for e in range(temp):
+							comb = dom[0][a] + dom[1][b] + dom[2][c] + dom[3][d] + dom[4][e]
+							if comb == num:
+								new = {dom[0][a], dom[1][b], dom[2][c], dom[3][d], dom[4][e]}
+								if len(new)==5:
+									domreal = domreal | new
+								if len(domreal)==9:
+											return domreal
+
+	elif div == 6:
+		for a in range(temp):
+			for b in range(temp):
+				for c in range(temp):
+					for d in range(temp):
+						for e in range(temp):
+							for f in range(temp):
+								comb = dom[0][a] + dom[1][b] + dom[2][c] + dom[3][d] + dom[4][e] + dom[5][f]
+								if comb == num:
+									new = {dom[0][a], dom[1][b], dom[2][c], dom[3][d], dom[4][e], dom[5][f]}
+									if len(new)==6:
+										domreal = domreal | new
+									if len(domreal)==9:
+											return domreal
+
+	elif div == 7:
+		for a in range(temp):
+			for b in range(temp):
+				for c in range(temp):
+					for d in range(temp):
+						for e in range(temp):
+							for f in range(temp):
+								for g in range(temp):
+									comb = dom[0][a] + dom[1][b] + dom[2][c] + dom[3][d] + dom[4][e] + dom[5][f] + dom[6][g]
+									if comb == num:
+										new = {dom[0][a], dom[1][b], dom[2][c], dom[3][d], dom[4][e], dom[5][f], dom[6][g]}
+										if len(new)==7:
+											domreal = domreal | new
+										if len(domreal)==9:
+											return domreal
+
+	return domreal
+
+
+
+
+	def crearDominios(): #
+	#Asigna dominios de las filas 
+	for row in range(0,FILAS):
+		for col in range(0,COLUMNAS):
+			if(type(matrix[row][col].getValue()) == tuple): #acá es tuple porque esta casilla tiene dos valores, el valor vertical y el horizontal
+				l = matrix[row][col].getValue()[1]
+				if(l != 0):
+					cont = contarCols(row,col) #cuenta cuantas casillas hay para hacer la suma
+					domi = dominios(l,cont)
+					for x in range(cont):
+						matrix2[row][col+x+1].setDom(domi) #esta matriz guarda los dominos de las filas para despues intersectarla con los dominios de las columnas
+
+	#Asigna dominios de las columnas
+	for row in range(0,FILAS):
+		for col in range(0,COLUMNAS):
+			if(type(matrix[row][col].getValue()) == tuple):
+				l = matrix[row][col].getValue()[0]
+				if(l != 0):
+					cont = contarRows(row,col)
+					domi = dominios(l,cont)
+					for x in range(cont):
+						matrix3[row+x+1][col].setDom(domi)
+
+	# intercepta los conjuntos y los manda como tipo lista
+	for row in range(0,FILAS):
+		for col in range(0,COLUMNAS):
+			matrix[row][col].setDom(list(matrix2[row][col].getDominio() & matrix3[row][col].getDominio())) 

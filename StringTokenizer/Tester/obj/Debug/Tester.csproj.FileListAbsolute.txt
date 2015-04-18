@@ -1,0 +1,7 @@
+D:\Bibliotecas\Escritorio\StringTokenizer\Tester\bin\Debug\Tester.exe
+D:\Bibliotecas\Escritorio\StringTokenizer\Tester\bin\Debug\Tester.pdb
+D:\Bibliotecas\Escritorio\StringTokenizer\Tester\bin\Debug\StringTokenizer.dll
+D:\Bibliotecas\Escritorio\StringTokenizer\Tester\bin\Debug\StringTokenizer.pdb
+D:\Bibliotecas\Escritorio\StringTokenizer\Tester\obj\Debug\Tester.csprojResolveAssemblyReference.cache
+D:\Bibliotecas\Escritorio\StringTokenizer\Tester\obj\Debug\Tester.exe
+D:\Bibliotecas\Escritorio\StringTokenizer\Tester\obj\Debug\Tester.pdb

@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringTokenizer", "StringTokenizer.csproj", "{C9185E76-095A-47CA-96BD-EF52BEBD834D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "Tester\Tester.csproj", "{7FBAC9F0-D8E2-48DB-892C-7797A51B5432}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C9185E76-095A-47CA-96BD-EF52BEBD834D}.Debug.ActiveCfg = Debug|.NET
+		{C9185E76-095A-47CA-96BD-EF52BEBD834D}.Debug.Build.0 = Debug|.NET
+		{C9185E76-095A-47CA-96BD-EF52BEBD834D}.Release.ActiveCfg = Release|.NET
+		{C9185E76-095A-47CA-96BD-EF52BEBD834D}.Release.Build.0 = Release|.NET
+		{7FBAC9F0-D8E2-48DB-892C-7797A51B5432}.Debug.ActiveCfg = Debug|.NET
+		{7FBAC9F0-D8E2-48DB-892C-7797A51B5432}.Debug.Build.0 = Debug|.NET
+		{7FBAC9F0-D8E2-48DB-892C-7797A51B5432}.Release.ActiveCfg = Release|.NET
+		{7FBAC9F0-D8E2-48DB-892C-7797A51B5432}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

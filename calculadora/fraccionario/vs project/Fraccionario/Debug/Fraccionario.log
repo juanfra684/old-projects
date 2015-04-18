@@ -1,0 +1,13 @@
+﻿Compilación iniciada a las 24/08/2014 12:25:42.
+     1>Proyecto "d:\bibliotecas\documentos\visual studio 2013\Projects\Fraccionario\Fraccionario\Fraccionario.vcxproj" en el nodo 2 (Build destinos).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt fraccionario.cpp
+         fraccionario.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"d:\bibliotecas\documentos\visual studio 2013\Projects\Fraccionario\Debug\Fraccionario.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"d:\bibliotecas\documentos\visual studio 2013\Projects\Fraccionario\Debug\Fraccionario.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"d:\bibliotecas\documentos\visual studio 2013\Projects\Fraccionario\Debug\Fraccionario.lib" /MACHINE:X86 Debug\fraccionario.obj
+         Fraccionario.vcxproj -> d:\bibliotecas\documentos\visual studio 2013\Projects\Fraccionario\Debug\Fraccionario.exe
+     1>Compilación del proyecto terminada "d:\bibliotecas\documentos\visual studio 2013\Projects\Fraccionario\Fraccionario\Fraccionario.vcxproj" (Build destinos).
+
+Compilación correcta.
+
+Tiempo transcurrido 00:00:00.72

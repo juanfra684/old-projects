@@ -1,0 +1,5 @@
+D:\Bibliotecas\Escritorio\StringTokenizer\bin\Debug\StringTokenizer.dll
+D:\Bibliotecas\Escritorio\StringTokenizer\bin\Debug\StringTokenizer.pdb
+D:\Bibliotecas\Escritorio\StringTokenizer\obj\Debug\StringTokenizer.csprojResolveAssemblyReference.cache
+D:\Bibliotecas\Escritorio\StringTokenizer\obj\Debug\StringTokenizer.dll
+D:\Bibliotecas\Escritorio\StringTokenizer\obj\Debug\StringTokenizer.pdb
